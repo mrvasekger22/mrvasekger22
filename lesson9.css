@@ -1,0 +1,94 @@
+ 
+body{
+	margin: 0;
+	background-image:url(https://images.freeimages.com/images/large-previews/4dc/free-casino-table-cloth-texture-1637741.jpg);
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+ 	left: 30%;
+}
+
+
+
+ .card li{
+ 	display: inline-block;
+ 	float:left;
+ 	background-color: white;
+ 	border: 2px solid black;
+ 	width: 80px;
+ 	height: 120px;
+ 	border-radius: 10px;
+ 	margin: 10px;
+ }
+ li{
+ 	list-style-type:none;
+ 	position: relative;
+ }
+ ul{
+ 	clear: both;
+ 	
+ }
+ 
+ div{
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	transform: translate(-50%, -50%);
+ 	width: 30px;
+ 	height: 30px; 
+ 
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+
+ }
+
+
+ ul:first-of-type li{
+ 	background-color: green;
+ }
+
+ ul:nth-of-type(3) li{
+ 	background-color: yellow;
+}
+
+li:last-of-type{
+	background-color: blue;
+}
+
+ul:first-of-type li:last-of-type,
+ul:nth-of-type(3) li:last-of-type{
+	background-color: yellow;
+}
+h1{
+	color:white;
+}
+
+li::before{
+	content: "A";
+	padding-bottom: 10px;
+	position:absolute;
+	top: 5px;
+	left: 5px;
+	background-image: url(./1.png);
+	background-size:100%;
+	background-repeat:no-repeat; 
+	background-position:100% 100%;
+}
+li::after{
+	padding-bottom: 10px;
+	position: absolute;
+	transform: rotate(180deg);
+	bottom: 5px;
+	right: 5px;
+	background-image: url(./1.png);
+	background-size:100%;
+	background-repeat:no-repeat; 
+	background-position:100% 100%;
+
+}
+li::before,
+li::after{
+	content:"A";
+}
